@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="table">
+   <table border="1">
+      <tr bgcolor="#9acd32">
+         <th>Position</th>
+         <th>Name</th>
+         <th>Team</th>
+         <th>Club</th>
+      </tr>
+      <tr>
+         <td>CM</td>
+         <td>Jeff Hendrick</td>
+         <td>Republic of Ireland</td>
+         <td>Derby County</td>
+      </tr>
+      <tr>
+         <td>CM</td>
+         <td>Oscar Hiljemark</td>
+         <td>Sweden</td>
+         <td>Palermo</td>
+      </tr>
+      <tr>
+         <td>CF</td>
+         <td>Anthony Martial</td>
+         <td>France</td>
+         <td>Manchester United</td>
+      </tr>
+      <tr>
+         <td>ST</td>
+         <td>Paco Alcacer</td>
+         <td>Spain</td>
+         <td>Valencia</td>
+      </tr>
+      <tr>
+         <td>CM</td>
+         <td>Oguzhan Ozyakup</td>
+         <td>Turkey</td>
+         <td>Besiktas</td>
+      </tr>
+   </table>
+</div>

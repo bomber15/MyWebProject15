@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
+   <head>
+      <title>PAGE3.html</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="description" content=""/>
+      <meta name="author" content=""/>
+      <script type="text/javascript" src="js/script_src.js"></script>
+      <script type="text/javascript" src="js/my_script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/project.css" type="text/css" />
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!-- Custom CSS -->
+      <link href="css/business-casual.css" rel="stylesheet"/>
+      <!-- Fonts -->
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+      <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+      <style type="text/css">
+         .wrap {
+         float: left;
+         }
+      </style>
+      <script>
+         function loadDoc() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+              myFunction(xhttp);
+            }
+          };
+          xhttp.open("GET", "xml/youngPlayers.xml", true);
+          xhttp.send();
+         }
+         function myFunction(xml) {
+          var i;
+          var xmlDoc = xml.responseXML;
+          var table="<tr><th>Name</th> <th>Position</th> <th>Team</th><th>Club</th></tr>";
+          var x = xmlDoc.getElementsByTagName("player");
+          for (i = 0; i <x.length; i++) { 
+            table += "<tr><td>" +
+            x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            x[i].getElementsByTagName("position")[0].childNodes[0].nodeValue +
+            "</td><td>"+
+            x[i].getElementsByTagName("team")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            x[i].getElementsByTagName("club")[0].childNodes[0].nodeValue +
+            "</td></tr>";
+          }
+          document.getElementById("playerList").innerHTML = table;
+         }
+           
+      </script>
+   </head>
+   <body>
+      <div id="container">
+      <div id="container1">
+      <div id="content">
+      <h1>
+         <img src="img/euros.png" alt="logo" width="10%" height="100px" /><img src="img/euros1.jpg" alt="euros" width="30%" align="right" height="100px" />
+      </h1>
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li>
+                     <a class="page-scroll" href="index.html">Home Page</a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="page2.html">Tables Page</a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="page3.php">Information Page</a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="page4.php">Resister Page</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <div class="row">
+         <div class="box">
+            <div class="col-lg-12">
+               <hr>
+               <center>
+                  <h2 class="intro-text text-center">About Travel Information AND links</h2>
+               </center>
+               </h2>
+               <hr>
+            </div>
+            <div class="col-md-6">
+               <img src="img/euros.png" class="wrap" />
+               <p>Can’t wait for more Soccer? The 2016 UEFA European Championships are fast approaching! Be there in the flesh 10 June – 
+                    10 July as France hosts the 2016 Euro Championships. For the first time the European Championships Final Tournament 
+                    will be contested by 24 teams instead of the traditional 16. Escape to the beautiful land of France and experience local 
+                    French culture, food, and take in some sights all while enjoying the live action of your favorite team right in front of 
+                    your eyes! Great Atlantic Sports is once again here for you and your sense of sport driven adventure. Offering a plethora 
+                    of packages to cater to your specific needs, we are sure to provide you with a once in a lifetime experience to the 2016 Euro 
+                    Championships. Book now to get the best we have to offer before someone steals your spot to the action.</p>
+               <center><p><a href=
+                  http://www.greatatlanticsports.com/article/uefa-euro-cup-2016-travel-packages><img src="img/plane.jpg"
+                  alt="plane logo" width="40" height="40" /></a></p></center>
+            </div>
+            <div class="clearfix"></div>
+            </div>
+            <div class="row">
+               <div class="box">
+                  <div class="col-lg-12">
+                     <hr>
+                     <center>
+                        <h2 class="intro-text text-center">Young Players To Watch</h2>
+                     </center>
+                     <hr>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="img/euros.png" class="wrap" />
+                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <form>
+                        <center><button type ="button" onclick="loadDoc()"/>Young Players List</button></center>
+                        <br><br>
+                        <center>
+                           <table id="playerList"></table>
+                        </center>
+                        <br />
+                  </div>
+                  </form>
+                  <div class="clearfix"></div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="box">
+                  <div class="col-lg-12">
+                     <hr>
+                     <center>
+                        <h2 class="intro-text text-center">Cities were games are played</h2>
+                     </center>
+                     <hr>
+                  </div>
+                  <div class="col-md-6">
+                     <img src="img/euros.png" class="wrap" />
+                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <?php include( '/home/ubuntu/workspace/php/city.php' );?>
+                     <div class="clearfix"></div>
+                  </div>
+               </div>
+               <footer>
+                  <div align="right">
+                     <div>
+                        <a href=
+                           https://www.facebook.com/uefaeuro/><img src="img/facebook.jpg"
+                           alt="facebook logo" width="40" height="40" /></a>
+                        <a href="https://www.facebook.com/LakesideHotelandLeisureCentre">
+                        <img src="img/twitter.png" alt="twitter logo" width="40"
+                           height="40" /></a>
+                        </p>
+                     </div>
+                  </div>
+               </footer>
+               <!-- jQuery -->
+               <script src="js/jquery.js"></script>
+               <!-- Bootstrap Core JavaScript -->
+               <script src="js/bootstrap.min.js"></script>
+               <!-- Script to Activate the Carousel -->
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

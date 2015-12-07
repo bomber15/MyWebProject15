@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<players>       
+  <player>    
+    <position>CM</position>
+    <name>Jeff Hendrick</name>
+    <team>Republic of Ireland</team>
+    <club>Derby County</club>
+  </player> 
+  
+  <player>    
+    <position>CM</position>
+    <name>Oscar Hiljemark</name>
+    <team>Sweden</team>
+    <club>Palermo</club>
+  </player> 
+  
+  <player>    
+    <position>CF</position>
+    <name>Anthony Martial</name>
+    <team>France</team>
+    <club>Manchester United</club>
+  </player> 
+  
+  <player>    
+    <position>ST</position>
+    <name>Paco Alcacer</name>
+    <team>Spain</team>
+    <club>Valencia</club>
+  </player> 
+  
+  <player>    
+    <position>CM</position>
+    <name>Oguzhan Ozyakup</name>
+    <team>Turkey</team>
+    <club>Besiktas</club>
+  </player> 
+</players>

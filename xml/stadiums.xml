@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stadiums>   <!-- This is the xml file that has all the details of cities the stadiums are in -->
+    <stadium>
+    <name>Saint-Denis</name>
+    <seats>80,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Marseille</name>
+    <seats>67,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Lyon</name>
+    <seats>59,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Lille</name>
+    <seats>50,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Paris</name>
+    <seats>45,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Bordeaux</name>
+    <seats>42,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Saint-Etienne</name>
+    <seats>42,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Nice</name>
+    <seats>35,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Lens</name>
+    <seats>35,000</seats>
+    </stadium>
+    
+    <stadium>
+    <name>Toulouse</name>
+    <seats>33,000</seats>
+    </stadium>
+</stadiums>
