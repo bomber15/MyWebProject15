@@ -94,11 +94,10 @@
          }
          }
          ?>
-      ?>
    </head>
    <body>
       <div id="wrapper">
-         <form id="reg" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <fieldset>
                <legend>Register Form</legend>
                <div>
