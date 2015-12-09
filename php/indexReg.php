@@ -33,7 +33,7 @@
                <legend>Register Form</legend>
                <div>
                   <input type="text" name="username" placeholder=
-                     "Enter Username" />
+                     "Enter Username" required/>
                </div>
                <div>
                   <input type="text" name="password" placeholder=
