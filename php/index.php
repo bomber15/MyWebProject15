@@ -4,15 +4,37 @@
    <head>
       <title></title>
       <link rel="stylesheet" href="css/forms.css" type="text/css" />
+      
+      <?php
+         $nameErr = $winnerErr = $emailErr = "";
+         $name = $winner = $email = "";
+         
+         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+         if (empty($_POST["name"])) {
+         $nameErr = "Required";
+         }
+         
+         if (empty($_POST["winner"])) {
+         $winnerErr = "Required";
+         
+         }
+         
+          if (empty($_POST["email"])) {
+         $emailErr = "Required";
+         
+         }
+         }
+      
+      ?>
    </head>
    <body>
       <div id="wrapper"> 
-         <form action="storeXML.php" method="post">
+         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <fieldset>
                <legend>Form</legend>
                <div>
                   <input type="text" name="name" placeholder=  
-                     "Enter Your Name"  required/> 
+                     "Enter Your Name"/> <span class="error">* <?php echo $nameErr;?></span> 
                </div>
                <div>
                   <input type="text" name="favteam" placeholder=
@@ -20,11 +42,11 @@
                </div>
                <div>
                   <input type="text" name="winner" placeholder=
-                     " Pick one team that will be in the final"  required />
+                     " Pick one team that will be in the final" /> <span class="error">* <?php echo $winnernameErr;?></span>
                </div>
                <div>
                   <input type="text" name="email" placeholder=
-                     "Enter your Email"  required />
+                     "Enter your Email"/><span class="error">* <?php echo $emailErr;?></span>
                </div>
                <input type="submit" name="submit" value="Send" />
             </fieldset>
