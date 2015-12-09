@@ -33,13 +33,13 @@
                <legend>Register Form</legend>
                <div>
                   <input type="text" name="username" placeholder=
-                     "Enter Username" required/>
+                     "Enter Username" />
                </div>
                <div>
                   <input type="text" name="password" placeholder=
                      "Enter Password"  required />
                </div>
-               <input type="submit" name="submit" value="Sign-Up" />
+               <input type="submit" name="submit" onclick="validateForm()" value="Sign-Up" />
             </fieldset>
          </form>
       </div>

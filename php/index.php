@@ -11,22 +11,22 @@
             <fieldset>
                <legend>Form</legend>
                <div>
-                  <input type="text" id="name" placeholder=  
+                  <input type="text" name="name" placeholder=  
                      "Enter Your Name"  required/> 
                </div>
                <div>
-                  <input type="text" id="favteam" placeholder=
+                  <input type="text" name="favteam" placeholder=
                      "What is your Favourate Team" />
                </div>
                <div>
-                  <input type="text" id="winner" placeholder=
+                  <input type="text" name="winner" placeholder=
                      " Pick one team that will be in the final"  required />
                </div>
                <div>
-                  <input type="text" id="email" placeholder=
+                  <input type="text" name="email" placeholder=
                      "Enter your Email"  required />
                </div>
-               <input type="submit" id="submit" value="Send" />
+               <input type="submit" name="submit" value="Send" />
             </fieldset>
          </form>
       </div>

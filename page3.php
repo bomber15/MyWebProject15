@@ -110,7 +110,7 @@
                </div>
                <div class="col-md-6">
                   <img src="img/stade.jpg" width="200" height="200" class="wrap" />
-                  <p>  Can’t wait for more Soccer? The 2016 UEFA European Championships are fast approaching! Be there in the flesh 10 June – 
+                  <p align="justify">  Can’t wait for more Soccer? The 2016 UEFA European Championships are fast approaching! Be there in the flesh 10 June – 
                      10 July as France hosts the 2016 Euro Championships. For the first time the European Championships Final Tournament 
                      will be contested by 24 teams instead of the traditional 16. Escape to the beautiful land of France and experience local 
                      French culture, food, and take in some sights all while enjoying the live action of your favorite team right in front of 
@@ -120,8 +120,7 @@
                   </p>
                   <center>
                      <p><a href=
-                        http://www.greatatlanticsports.com/article/uefa-euro-cup-2016-travel-packages><img src="img/plane.jpg"
-                        alt="plane logo" width="80" height="80" /></a></p>
+                        http://www.greatatlanticsports.com/article/uefa-euro-cup-2016-travel-packages /> Link for Packages</a></p>
                   </center>
                </div>
                <div class="clearfix"></div>
@@ -137,7 +136,7 @@
                   </div>
                   <div class="col-md-6">
                      <img src="img/jeff.jpg" width="200" height="200" class="wrap" />
-                     <p>In this section we have a list of some of the top young tallents that will grace france in the coming summer. Each player looking to make a big impact and maybe land the move of their dreams to one of the European Giants in club football. The euros is a great stage for up and coming tallent to show what they have against the best players in europe. In the past is has been a great stage for the likes of Cristiano Ronaldo and Wayne Rooney to anounce that they had arrived at the top.</p>
+                     <p align="justify">In this section we have a list of some of the top young tallents that will grace france in the coming summer. Each player looking to make a big impact and maybe land the move of their dreams to one of the European Giants in club football. The euros is a great stage for up and coming tallent to show what they have against the best players in europe. In the past is has been a great stage for the likes of Cristiano Ronaldo and Wayne Rooney to anounce that they had arrived at the top.</p>
                      <form>
                         <center><button type ="button" onclick="loadDoc()"/>Young Players List</button></center>
                         <br><br>
@@ -161,8 +160,11 @@
                   </div>
                   <div class="col-md-6">
                      <img src="img/marseille.jpg" width="200" height="200"class="wrap" />
-                     <p>At this Section we will show you some of the host citys and stadiums. These /citys and venues are steeped in tradition and are as you would expect from the french, oozing with class.</p>
-                     <p>The image is if the city of Marseille, this is where ireland will play their first game against Wales on the 5th of June.</p>
+                     <p align="justify">At this Section we will show you some of the host cities and stadiums. These cities and venues are steeped in tradition and are as you would
+                      expect from the French, oozing with class. The Euros will be a very busy time for hotels and other accommodation in the areas. The accommodation 
+                      will most likely fill up fast so it is important that you make plans and any booking in advance so you will not miss out on the accommodation and possibly seeing the games that you are interested in. There are plenty of good website that help with booking packages. Book soon as the hotels will so be filled to capacity. 
+                      The image is if the city of Marseille, this is where Ireland will play their first game against Wales on the 5th of June.
+                     </p>
                      </br>
                   
                      <?php include( '/home/ubuntu/workspace/php/city.php' );?>
@@ -175,7 +177,7 @@
                         <a href=
                            https://www.facebook.com/uefaeuro/><img src="img/facebook.jpg"
                            alt="facebook logo" width="40" height="40" /></a>
-                        <a href="https://www.facebook.com/LakesideHotelandLeisureCentre">
+                        <a href="https://twitter.com/UEFAEURO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
                         <img src="img/twitter.png" alt="twitter logo" width="40"
                            height="40" /></a>
                         </p>
