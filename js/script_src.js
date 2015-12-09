@@ -15,7 +15,6 @@
   });
  });
  
- 
  $ (document).ready(function(){ //When the page loads do whats in the function
  	
  	$('#content').load('city.php'); //Whatever has the id content load the php fine there

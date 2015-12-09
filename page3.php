@@ -34,17 +34,17 @@
               myFunction(xhttp);
             }
           };
-          xhttp.open("GET", "xml/youngPlayers.xml", true);
+          xhttp.open("GET", "xml/youngPlayers.xml", true);  // Locates the youngPlayers.xml
           xhttp.send();
          }
          function myFunction(xml) {
           var i;
-          var xmlDoc = xml.responseXML;
-          var table="<tr><th>Name</th> <th>Position</th> <th>Team</th><th>Club</th></tr>";
-          var x = xmlDoc.getElementsByTagName("player");
-          for (i = 0; i <x.length; i++) { 
+          var xmlDoc = xml.responseXML; //get the response data as XML data
+          var table="<tr><th>Name</th> <th>Position</th> <th>Team</th><th>Club</th></tr>"; //Sets up a tanle for the list
+          var x = xmlDoc.getElementsByTagName("player"); //Gets the Tag Name player and sets it in x
+          for (i = 0; i <x.length; i++) { // Loops the length of x pltting name, position etc in the <td>
             table += "<tr><td>" +
-            x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +  //Add the table data
             "</td><td>" +
             x[i].getElementsByTagName("position")[0].childNodes[0].nodeValue +
             "</td><td>"+
@@ -53,7 +53,7 @@
             x[i].getElementsByTagName("club")[0].childNodes[0].nodeValue +
             "</td></tr>";
           }
-          document.getElementById("playerList").innerHTML = table;
+          document.getElementById("playerList").innerHTML = table; // Sets the id playerlist that is called by the <table> in the doc position
          }
            
       </script>
@@ -62,66 +62,69 @@
       <div id="container">
       <div id="container1">
       <div id="content">
-      <h1>
-         <img src="img/euros.png" alt="logo" width="10%" height="100px" /><img src="img/euros1.jpg" alt="euros" width="30%" align="right" height="100px" />
-      </h1>
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+         <h1>
+            <img src="img/euros.png" alt="logo" width="40%" height="100px"  /><img src="img/euros1.jpg" alt="euros" width="60%" align="right" height="100px" />
+         </h1>
+         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li>
+                        <a class="page-scroll" href="index.html">Home Page</a>
+                     </li>
+                     <li>
+                        <a class="page-scroll" href="page2.html">Tables Page</a>
+                     </li>
+                     <li>
+                        <a class="page-scroll" href="page3.php">Information Page</a>
+                     </li>
+                     <li>
+                        <a class="page-scroll" href="page4.php">Register Page</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- /.navbar-collapse -->
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                  <li>
-                     <a class="page-scroll" href="index.html">Home Page</a>
-                  </li>
-                  <li>
-                     <a class="page-scroll" href="page2.html">Tables Page</a>
-                  </li>
-                  <li>
-                     <a class="page-scroll" href="page3.php">Information Page</a>
-                  </li>
-                  <li>
-                     <a class="page-scroll" href="page4.php">Resister Page</a>
-                  </li>
-               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-         </div>
-         <!-- /.container-fluid -->
-      </nav>
-      <div class="row">
-         <div class="box">
-            <div class="col-lg-12">
-               <hr>
-               <center>
-                  <h2 class="intro-text text-center">About Travel Information AND links</h2>
-               </center>
-               </h2>
-               <hr>
-            </div>
-            <div class="col-md-6">
-               <img src="img/euros.png" class="wrap" />
-               <p>Can’t wait for more Soccer? The 2016 UEFA European Championships are fast approaching! Be there in the flesh 10 June – 
-                    10 July as France hosts the 2016 Euro Championships. For the first time the European Championships Final Tournament 
-                    will be contested by 24 teams instead of the traditional 16. Escape to the beautiful land of France and experience local 
-                    French culture, food, and take in some sights all while enjoying the live action of your favorite team right in front of 
-                    your eyes! Great Atlantic Sports is once again here for you and your sense of sport driven adventure. Offering a plethora 
-                    of packages to cater to your specific needs, we are sure to provide you with a once in a lifetime experience to the 2016 Euro 
-                    Championships. Book now to get the best we have to offer before someone steals your spot to the action.</p>
-               <center><p><a href=
-                  http://www.greatatlanticsports.com/article/uefa-euro-cup-2016-travel-packages><img src="img/plane.jpg"
-                  alt="plane logo" width="40" height="40" /></a></p></center>
-            </div>
-            <div class="clearfix"></div>
+            <!-- /.container-fluid -->
+         </nav>
+         <div class="row">
+            <div class="box">
+               <div class="col-lg-12">
+                  <hr>
+                  <center>
+                     <h2 class="intro-text text-center">About Travel Information AND links</h2>
+                  </center>
+                  </h2>
+                  <hr>
+               </div>
+               <div class="col-md-6">
+                  <img src="img/stade.jpg" width="200" height="200" class="wrap" />
+                  <p>  Can’t wait for more Soccer? The 2016 UEFA European Championships are fast approaching! Be there in the flesh 10 June – 
+                     10 July as France hosts the 2016 Euro Championships. For the first time the European Championships Final Tournament 
+                     will be contested by 24 teams instead of the traditional 16. Escape to the beautiful land of France and experience local 
+                     French culture, food, and take in some sights all while enjoying the live action of your favorite team right in front of 
+                     your eyes! Great Atlantic Sports is once again here for you and your sense of sport driven adventure. Offering a plethora 
+                     of packages to cater to your specific needs, we are sure to provide you with a once in a lifetime experience to the 2016 Euro 
+                     Championships. Book now to get the best we have to offer before someone steals your spot to the action.
+                  </p>
+                  <center>
+                     <p><a href=
+                        http://www.greatatlanticsports.com/article/uefa-euro-cup-2016-travel-packages><img src="img/plane.jpg"
+                        alt="plane logo" width="80" height="80" /></a></p>
+                  </center>
+               </div>
+               <div class="clearfix"></div>
             </div>
             <div class="row">
                <div class="box">
@@ -133,10 +136,8 @@
                      <hr>
                   </div>
                   <div class="col-md-6">
-                     <img src="img/euros.png" class="wrap" />
-                     <p>This is a great place to introduce your company or project and describe what you do.</p>
-                     <p>This is a great place to introduce your company or project and describe what you do.</p>
-                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <img src="img/jeff.jpg" width="200" height="200" class="wrap" />
+                     <p>In this section we have a list of some of the top young tallents that will grace france in the coming summer. Each player looking to make a big impact and maybe land the move of their dreams to one of the European Giants in club football. The euros is a great stage for up and coming tallent to show what they have against the best players in europe. In the past is has been a great stage for the likes of Cristiano Ronaldo and Wayne Rooney to anounce that they had arrived at the top.</p>
                      <form>
                         <center><button type ="button" onclick="loadDoc()"/>Young Players List</button></center>
                         <br><br>
@@ -159,10 +160,11 @@
                      <hr>
                   </div>
                   <div class="col-md-6">
-                     <img src="img/euros.png" class="wrap" />
-                     <p>This is a great place to introduce your company or project and describe what you do.</p>
-                     <p>This is a great place to introduce your company or project and describe what you do.</p>
-                     <p>This is a great place to introduce your company or project and describe what you do.</p>
+                     <img src="img/marseille.jpg" width="200" height="200"class="wrap" />
+                     <p>At this Section we will show you some of the host citys and stadiums. These /citys and venues are steeped in tradition and are as you would expect from the french, oozing with class.</p>
+                     <p>The image is if the city of Marseille, this is where ireland will play their first game against Wales on the 5th of June.</p>
+                     </br>
+                  
                      <?php include( '/home/ubuntu/workspace/php/city.php' );?>
                      <div class="clearfix"></div>
                   </div>

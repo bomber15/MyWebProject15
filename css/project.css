@@ -1,15 +1,15 @@
 #container1
 {
-width: 80%;
+width: 60%;
 min-height:100%;
-margin: 10px auto;
-background-color: white;
+margin: 1px auto;
+background-image:url('bg2.png');
 color: #333;
 border: 1px solid grey;
 }
 
 body{
-background-image:url('background_tables.jpg'); 
+background-image:url('background_2.jpg'); 
 }
 
 #navmenu
@@ -41,12 +41,13 @@ font-size:20px;
 #content
 {
 padding: 1em; 
-margin-left: 200px;
-margin-right: 200px;
+margin-left: 100px;
+margin-right: 100px;
 color:black;
 font-style: italic;
 font-size:15px;
 } 
+
 
 .buttonStyle 
 {

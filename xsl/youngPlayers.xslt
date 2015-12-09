@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
    <xsl:template match="/">
       <div>
          <table border="1">
@@ -9,19 +8,19 @@
                <th>Team</th>
                <th>Club</th>
             </tr>
-            <xsl:for-each select="form/person">
+            <xsl:for-each select="players/player">
                <tr>
                   <td>
-                     <xsl:value-of select="name" />
+                     <xsl:value-of select="position"/>
                   </td>
                   <td>
-                     <xsl:value-of select="favteam" />
+                     <xsl:value-of select=" name" />
                   </td>
                   <td>
-                     <xsl:value-of select="winner" />
+                     <xsl:value-of select=" team" />
                   </td>
                   <td>
-                     <xsl:value-of select="comment" />
+                     <xsl:value-of select=" club" />
                   </td>
                </tr>
             </xsl:for-each>
@@ -29,3 +28,5 @@
       </div>
    </xsl:template>
 </xsl:stylesheet>
+
+

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="tables.xsl" type="text/xsl"?> <!-- This is the link to connect the stylesheet -->
-<europeanCup>                                        <!-- This is the xml of all the table data -->
+<?xml-stylesheet href="tables.xsl" type="text/xsl"?>
+<!-- This is the link to connect the stylesheet -->
+<europeanCup>
    <groupA>
-     <group> Group A </group>   
+      <group>Group A</group>
       <team>
          <name>Austria</name>
          <played>0</played>
@@ -41,7 +42,7 @@
       </team>
    </groupA>
    <groupB>
-    <group> Group B </group>    
+      <group>Group B</group>
       <team>
          <name>Croatia</name>
          <played>0</played>
@@ -80,13 +81,13 @@
       </team>
    </groupB>
    <groupC>
-     <group> Group C </group>     
+      <group>Group C</group>
       <team>
          <name>Belgium</name>
          <played>0</played>
          <win>0</win>
          <loose>0</loose>
-         <draw></draw>
+         <draw />
          <scored>0</scored>
          <points>0</points>
       </team>
@@ -119,14 +120,14 @@
       </team>
    </groupC>
    <groupD>
-    <group> Group D </group>     
+      <group>Group D</group>
       <team>
          <name>Albania</name>
          <played>0</played>
          <win>0</win>
          <loose>0</loose>
          <draw>0</draw>
-         <scored></scored>
+         <scored />
          <points>0</points>
       </team>
       <team>
@@ -156,9 +157,9 @@
          <scored>0</scored>
          <points>0</points>
       </team>
-    </groupD>
-     <groupE>
-    <group> Group E </group>     
+   </groupD>
+   <groupE>
+      <group>Group E</group>
       <team>
          <name>France</name>
          <played>0</played>
@@ -195,9 +196,9 @@
          <scored>0</scored>
          <points>0</points>
       </team>
-    </groupE>
-     <groupF>
-    <group> Group F </group>     
+   </groupE>
+   <groupF>
+      <group>Group F</group>
       <team>
          <name>Iceland</name>
          <played>0</played>
@@ -238,6 +239,5 @@
          <page1>home.xml</page1>
          <website>https://www.facebook.com/uefaeuro/</website>
       </navMenu>
-      </groupF>
-   
+   </groupF>
 </europeanCup>

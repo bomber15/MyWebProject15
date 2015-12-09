@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="form.xsl" type="text/xsl"?>
+<?xml-stylesheet href="rss.xslt" type="text/xsl"?>
 <form>
 </form>

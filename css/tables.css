@@ -1,11 +1,18 @@
 th, td {
-   border: 3px solid black;
    padding: 200px;
    text-align: left;
 }
 
+p{
+    text-align:center;
+}
+
+
+
+
+
 body{
-background-image:url('bg2.png'); 
+background-image:url('background_2.jpg'); 
 }
 
 
@@ -35,7 +42,7 @@ p {
 width: 65%;
 min-height:100%;
 margin: 10px auto;
-background-color: white;
+background-image:url('bg2.png');
 color: #333;
 border: 1px solid grey;
 }
@@ -81,30 +88,5 @@ color:black;
 font-style: italic;
 font-size:15px;
 } 
-
-.buttonStyle 
-{
-border-radius: 4px;
-border: thin solid #F0E020;
-padding: 5px;
-background-color: #F8F094;
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-font-weight: bold;
-color: #663300;
-width: 75px;
-}
-.buttonStyle:hover 
-{
-border: thin solid #FFCC00;
-background-color: #FCF9D6;
-color: #996633;
-cursor: pointer;
-}
-.buttonStyle:active {
-border: thin solid #99CC00;
-background-color: #F5FFD2;
-color: #669900;
-cursor: pointer;
-}
 
 

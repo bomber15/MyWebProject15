@@ -1,9 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
    <head>
-      
       <title>INDEX.html</title>
-      
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta charset="utf-8">
@@ -11,12 +9,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="description" content=""/>
       <meta name="author" content=""/>
-      
       <script type="text/javascript" src="script_src.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script type='text/javascript' src='js/script_src.js'></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      
       <link rel="stylesheet" href="css/project.css" type="text/css" />
       <!-- Bootstrap Core CSS -->
       <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -25,130 +21,95 @@
       <!-- Fonts -->
       <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
       <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+      <script type="text/javascript">
+      var http;
+      // All modern browsers have built in XMLHttpRequest Objects
+      var xhttp = new XMLHttpRequest(); // Create new XMLHttpRequest object
+       var ActiveXObject
+        var XMLHttpRequestObject = false;
+        if (window.XMLHttpRequest) {
+        XMLHttpRequestObject = new XMLHttpRequest();
+        } else if (window.ActiveXObject) { // For older versions of IE use ActiveX object
+        XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+         xhttp.onreadystatechange = function() {
+             if (xhttp.readyState == 4 && xhttp.status == 200) { //When readyState is 4 and status is 200 the responce is ready
+                 myFunction(xhttp); 
+             }
+         };
+         xhttp.open("GET", "home.xml", true); //This locates the home.xml doc
+         xhttp.send(); // These 2 lines send a request ro the server
+         
+         function myFunction(xml) { //This function looks for everything init by the Tag Names
+             var xmlDoc = xml.responseXML;
+             document.getElementById("index").innerHTML = //This gets the Tagname details and stores them in an id="index"
+             xmlDoc.getElementsByTagName("intro")[0].childNodes[0].nodeValue + "<br>" + "<br>" + 
+         	 xmlDoc.getElementsByTagName("location")[0].childNodes[0].nodeValue + "<br>" + "<br>" +
+             xmlDoc.getElementsByTagName("teams")[0].childNodes[0].nodeValue + "<br>" + "<br>" +
+             xmlDoc.getElementsByTagName("winner")[0].childNodes[0].nodeValue;
+         }
+          
+      </script> 
    </head>
    <body>
       <div id="container">
-         <div id="container1">
-            <div  id="content">
-               <br />
-               <h1>
-                  <img src="img/euros.png" alt="logo" width="10%" height="100px" /><img src="img/euros1.jpg" alt="euros" width="30%" align="right" height="100px" />
-               </h1>
-               <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-                  <div class="container-fluid">
-                     <!-- Brand and toggle get grouped for better mobile display -->
-                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
-                     </div>
-                     <!-- Collect the nav links, forms, and other content for toggling -->
-                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                           <li>
-                              <a class="page-scroll" href="index.html">Home Page</a>
-                           </li>
-                           <li>
-                              <a class="page-scroll" href="page2.html">Tables Page</a>
-                           </li>
-                           <li>
-                              <a class="page-scroll" href="page3.php">Information Page</a>
-                           </li>
-                           <li>
-                              <a class="page-scroll" href="page4.php">Resister Page</a>
-                           </li>
-                        </ul>
-                     </div>
-                     <!-- /.navbar-collapse -->
-                  </div>
-                  <!-- /.container-fluid -->
-               </nav>
-               <br />
-               <div id="heading">
-                  UEFA Euro 2016
-                  <p> France
-                     10-June-2016
-                     10-july-2016
-                  </p>
-               </div>
-               <br />
-               <br />
-               <br />
-               <div class="row">
-                  <div class="box">
-                     <div class="col-lg-12">
-                        <hr>
-                        <p align="center"><img id="picture" src="img/ireland.jpg" alt="footy"   /></p>
-                        <p align ="center"> Click On The Image Above</p>
-                        <hr>
-                        <p>The 2016 UEFA European Championship, commonly referred to as UEFA Euro 2016, will be the 15th edition of the UEFA 
-                           European Championship, the quadrennial international men's football championship of Europe organized by UEFA. It is 
-                           scheduled to be held in France from 10 June to 10 July 2016. Spain are two-time defending champions.
-                           For the first time, the European Championship final tournament will be contested by 24 teams, having been 
-                           expanded from the 16-team format used since 1996. Under this new format, the finalists will contest a group stage 
-                           consisting of six groups of four teams, followed by a knockout stage including three rounds and the final. 19 teams 
-                           joined France who qualified automatically as hosts. A two-legged play-off in November 2015 decided the last four spots 
-                           at the final tournament.
-                        </p>
-                          <p>The 2016 UEFA European Championship, commonly referred to as UEFA Euro 2016, will be the 15th edition of the UEFA 
-                           European Championship, the quadrennial international men's football championship of Europe organized by UEFA. It is 
-                           scheduled to be held in France from 10 June to 10 July 2016. Spain are two-time defending champions.
-                           For the first time, the European Championship final tournament will be contested by 24 teams, having been 
-                           expanded from the 16-team format used since 1996. Under this new format, the finalists will contest a group stage 
-                           consisting of six groups of four teams, followed by a knockout stage including three rounds and the final. 19 teams 
-                           joined France who qualified automatically as hosts. A two-legged play-off in November 2015 decided the last four spots 
-                           at the final tournament.
-                        </p>
-                        <div>             
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="box">
-                        <div class="col-lg-12">
-                           <hr>
-                           <h2 class="intro-text text-center">
-                              <center>Euros 2016</center>
-                           </h2>
-                           <hr>
-                           <p>France was chosen as the host on 28 May 2010, after a bidding process in which they beat Italy and Turkey for 
-                              the right to host the 2016 finals. The matches will be played in ten stadia in ten cities: Bordeaux, Lens, Lille, 
-                              Lyon, Marseille, Nice, Paris, Saint-Denis, Saint-Étienne, and Toulouse. It will be the third time that France hosts 
-                              the tournament, after the inaugural tournament in 1960 and the 1984 finals. The French team have won the European 
-                              Championship twice: in 1984 and 2000.</p>
-                        </div>
-                     </div>
-                  </div>
-                  <br />
-                  <br />
-                  <div>
-                     The 14 European Championship tournaments have been won by nine different national teams: Germany and Spain each have won 
-                     three titles, France has two titles, and Soviet Union, Italy, Czechoslovakia, Netherlands, 
-                     Denmark and Greece have won one title each. To date, Spain are the only side in history to 
-                     have won consecutive titles, doing so in the 2008 and 2012 editions. It is the 2nd most 
-                     watched football tournament in the world after the World Cup. Euro 2012 final was watched 
-                     by a global audience of around 300 million. The most recent championship, co-hosted by 
-                     Poland and Ukraine in 2012, was won by Spain, who beat Italy 4–0 at the final in Kiev.
-                  </div>
-                  <div class="row">
-                     <div class="box">
-                        <div class="col-lg-12">
-                           <hr>
-                           <h2 class="intro-text text-center">
-                              <center>Euros 2016</center>
-                           </h2>
-                           <hr>
-                           <p> The winning team earns the right to compete at the 2017 FIFA Confederations Cup hosted by Russia.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-                  <br />
-               </div>
+      <div id="container1">
+      <div  id="content">
+      <br />
+      <h1>
+         <img src="img/euros.png" alt="logo" width="40%" height="100px"  /><img src="img/euros1.jpg" alt="euros" width="60%" align="right" height="100px" />
+      </h1>
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li>
+                     <a class="page-scroll" href="index.html">Home Page</a> <!-- Lins to the other pages using a bootstrap nav bar -->
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="page2.html">Tables Page</a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="page3.php">Information Page</a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="page4.php">Register Page</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <br />
+      <div id="heading">
+         <h3>UEFA Euro 2016</h3>
+         <p> France
+            10-June-2016
+            10-july-2016
+         </p>
+      </div>
+      <br />
+      <div class="row">
+         <div class="box">
+            <div class="col-lg-12">
+               <hr>
+               <p align="center"><img id="picture" src="img/ireland.jpg" alt="footy"   /></p>
+               <p align ="center"> Click On The Image Above</p>
+               <hr>
+               <p align ="center" id="index"></p>
                <footer>
                   <div align="right">
                      <div>
@@ -158,7 +119,6 @@
                         <a href="https://www.facebook.com/LakesideHotelandLeisureCentre">
                         <img src="img/twitter.png" alt="twitter logo" width="40"
                            height="40" /></a>
-                        </p>
                      </div>
                   </div>
                </footer>
