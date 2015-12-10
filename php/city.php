@@ -19,7 +19,7 @@
             <th>Seats</th>
          </tr>
          <?php
-            while ($stadium = mysql_fetch_assoc($records)) {
+            while ($stadium = mysql_fetch_assoc($records)) { //w3schools, youtube
                 
                 echo "<tr>";
                 

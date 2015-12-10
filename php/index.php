@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="css/forms.css" type="text/css" />
       
       <?php
-         $nameErr = $winnerErr = $emailErr = "";
+         $nameErr = $winnerErr = $emailErr = ""; //w3schools, youtube
          $name = $winner = $email = "";
          
          if ($_SERVER["REQUEST_METHOD"] == "POST") {

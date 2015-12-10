@@ -12,7 +12,7 @@
       <script type="text/javascript" src="js/script_src.js"></script>
       <script type="text/javascript" src="js/my_script.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
       <link rel="stylesheet" href="css/project.css" type="text/css" />
       <!-- Bootstrap Core CSS -->
       <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -37,7 +37,7 @@
           xhttp.open("GET", "xml/youngPlayers.xml", true);  // Locates the youngPlayers.xml
           xhttp.send();
          }
-         function myFunction(xml) {
+         function myFunction(xml) { //w3schools, youtube
           var i;
           var xmlDoc = xml.responseXML; //get the response data as XML data
           var table="<tr><th>Name</th> <th>Position</th> <th>Team</th><th>Club</th></tr>"; //Sets up a tanle for the list

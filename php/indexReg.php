@@ -9,7 +9,7 @@
          .error {color: #FF0000;}
       </style>
       <?php
-         $conn = mysql_connect('localhost', 'root', '');
+         $conn = mysql_connect('localhost', 'root', ''); //w3schools, youtube
          $db   = mysql_select_db('c9');
          
          $username = mysql_real_escape_string( $_POST["username"] );
